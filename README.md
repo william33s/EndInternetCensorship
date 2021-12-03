@@ -1,5 +1,5 @@
 # EndInternetCensorship
-Check Out My Website Here On Replit: https://main.endinternetcensorship.repl.co/
+Check Out My Website Here On Replit: https://home.endinternetcensorship.repl.co/
 
 Does Your School Try To Censor Your Internet Access?<br>
 Well, Mine Does And I Decided To Do Something About It!<br>
