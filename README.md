@@ -6,6 +6,8 @@ Well, Mine Does And I Decided To Do Something About It!<br>
 This Site Can Easily Be Moved And Stays Unblocked,<br>
 While Receiving New Updates Now & Then!
 
+⚠️ Do **not** try to deploy anything. The code on github is unfinished, just use the replit version for now.
+
 <hr>
 
 <i><b>#EndInternetCensorship<b><i>
