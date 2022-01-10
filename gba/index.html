@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EndInternetCensorship</title>
+    <link rel="shortcut icon" type="image/png" href="https://eic-files.endinternetcensorship.repl.co/img/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://eic-files.endinternetcensorship.repl.co/main.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+      function navFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+    <a href="https://home.endinternetcensorship.repl.co">Home</a>
+    <a href="https://proxy.endinternetcensorship.repl.co/">Proxy</a>
+    <a href="https://games.endinternetcensorship.repl.co">Games</a>
+    <div class="dropdown" style="background-color:#04AA6D;">
+      <button class="dropbtn">Retro
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a class="active" href="/">GBA</a>
+        <a href="https://n64.endinternetcensorship.repl.co" >N64</a>
+        <a href="https://ds-games.endinternetcensorship.repl.co" id="fL">DS</a>
+      </div>
+    </div>
+    <a href="https://about.endinternetcensorship.repl.co" id="last">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="navFunction()">&#9776;</a>
+  </div>
+  <header style="padding-left: 10px">
+    <img src="https://eic-files.endinternetcensorship.repl.co/img/logo.png" alt="logo" style="float: left; width: 50px; padding-right: 5px;">
+    <h1>EndInternetCensorship</h1>
+  </header>
+<div class="container">
+<p>GBA Games</p>
+<h2>Play GBA Games Here:</h2>
+<button style="width:200px;" type="submit" onclick="runEmu();rFunction();disableScroll()" id="btn">Play Now!</button>
+</div>
+
+<iframe style="width:100vw;height:100vh;max-width:none;position:absolute;top:0px;left:0px;background:rgb(248,237,212);" allowtransparency="true" frameBorder="0" id="gFrame" src="">
+</iframe>
+
+</body>
+
+<script>
+  document.getElementById("gFrame").style.display="none";
+  window.frames[0].document.execCommand('Stop');
+  window.frames[0].stop();
+function runEmu() {
+  var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+    link.type = 'image/x-icon';
+    link.rel = 'shortcut icon';
+    link.href = 'gba-emu/Binaries/gb.ico';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  for (let i = 0; i < frames.length; i++) {
+    frames[i].location = "gba-emu/index.html";
+  };
+}
+function rFunction() {
+  var x = document.getElementById("gFrame");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  };
+  $("#gFrame").on('load',function() {
+        document.title = document.getElementById("gFrame").contentDocument.title;
+    });
+}
+function disableScroll() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+  document.body.style.overflow = 'hidden';
+    scrollTop = 
+      window.pageYOffset || document.documentElement.scrollTop;
+    scrollLeft = 
+      window.pageXOffset || document.documentElement.scrollLeft,
+
+        window.onscroll = function() {
+            window.scrollTo(scrollLeft, scrollTop);
+        };
+}
+</script>
+
+</html>
