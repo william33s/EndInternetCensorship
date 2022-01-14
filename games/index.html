@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EndInternetCensorship</title>
-    <link rel="shortcut icon" type="image/png" href="img/logo.png">
+    <link rel="shortcut icon" type="image/png" href="img/logo.png" id="favicon">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -24,13 +24,13 @@
       }
     </script>
     <style>
-    *{text-decoration:none;}.tn{width: 250px;background-color: #04AA6D;border-radius: 25px;border: 5px solid black;box-shadow: 5px 5px 50px grey;transition: all .2s ease-in-out;margin-left: 20px;margin-bottom: 30px;float: left;}.tn:hover{transform: scale(1.1);}.t,.lazy{padding-top: 15px;}.center{margin: 0 auto;width: 1150px;}
+    *{text-decoration:none;}.tn{width: 250px;background-color: #04AA6D;border-radius: 25px;border: 5px solid black;box-shadow: 5px 5px 50px grey;transition: all .2s ease-in-out;margin-left: 20px;margin-bottom: 30px;float: left;}.tn:hover{transform: scale(1.1);}.t,.lazy{padding-top: 15px;}.center{margin: 0 auto;width: 1150px;}.load{pointer-events:none;}
   </style>
 </head>
 <body>
   <div class="topnav" id="myTopnav">
     <a href="https://home.endinternetcensorship.repl.co">Home</a>
-    <a href="https://proxy.endinternetcensorship.repl.co/">Proxy</a>
+    <a href="https://web.endinternetcensorship.repl.co/">Proxy</a>
     <a href="/" class="active">Games</a>
     <div class="dropdown">
       <button class="dropbtn">Retro
@@ -53,13 +53,13 @@
 <p style="margin-bottom: 30px;">Games</p>
 <div class="center">
 <div class="tn">
-  <a onclick="start3Frame(); rFunction(); disableScroll()">
+  <a onclick="start3Frame(); rFunction()">
   <img src="img/sm64.webp" class="t" alt="sm64"><hr>
   <h1>SM64</h1>
   </a>
 </div>
 <div class="tn">
-  <a onclick="startFrame(); rFunction(); disableScroll()">
+  <a onclick="startFrame(); rFunction()">
   <img src="img/slope.webp" class="t" alt="slope"><hr>
   <h1>Slope</h1>
   </a>
@@ -71,7 +71,7 @@
   </a>
 </div>
 <div class="tn">
-  <a onclick="start2Frame(); rFunction(); disableScroll()">
+  <a onclick="start2Frame(); rFunction()">
   <img src="img/minecraft.webp" class="t" alt="steve"><hr>
   <h1>MinecraftJS</h1>
   </a>
@@ -227,7 +227,7 @@
   </a>
 </div>
 <div class="tn">
-  <a onclick="start4Frame(); rFunction(); disableScroll()">
+  <a onclick="start4Frame(); rFunction()">
   <img class="lazy" data-src="img/hextris.png" alt="hextris-logo"><hr>
   <h1>Hextris</h1>
   </a>
@@ -270,74 +270,35 @@
 </div>
 </div>
 </div>
-<iframe style="width:100vw;height:100vh;max-width:none;position:absolute;top:0px;left:0px;" frameBorder="0" id="main" src="">
+<iframe style="width:100vw;height:100vh;max-width:none;position:absolute;top:0px;left:0px;z-index:5;" frameBorder="0" id="main" class="load" src="about:blank">
 </iframe>
-
 </body>
 
 <script>
-  $(function() {
-        $('.lazy').Lazy();
-    });
-  document.title = "EndInternetCensorship";
-  var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
-    link.type = 'image/x-icon';
-    link.rel = 'shortcut icon';
-    link.href = 'img/logo.png';
-    document.getElementsByTagName('head')[0].appendChild(link);
-  document.getElementById("main").style.display="none";
-  window.frames[0].document.execCommand('Stop');
-  window.frames[0].stop();
+const favicon = document.getElementById("favicon");  
+var x = document.getElementById("main");
+$(function() {$('.lazy').Lazy();});
 function startFrame() {
-  for (let i = 0; i < frames.length; i++) {
-    frames[i].location = "g-slope";
-  };
+  x.src = "g-slope";
 }
 function start2Frame() {
-  const frames = window.frames;
-  for (let i = 0; i < frames.length; i++) {
-    frames[i].location = "g-mjs";
-  };
-  var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
-    link.type = 'image/x-icon';
-    link.rel = 'shortcut icon';
-    link.href = 'g-mjs/favicon.ico';
-    document.getElementsByTagName('head')[0].appendChild(link);
+  x.src = "g-mjs";
+  favicon.setAttribute("href", "g-mjs/favicon.ico");
 }
 function start3Frame() {
-  const frames = window.frames;
-  for (let i = 0; i < frames.length; i++) {
-    frames[i].location = "g-sm64";
-  };
-  var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
-    link.type = 'image/x-icon';
-    link.rel = 'shortcut icon';
-    link.href = 'g-sm64/logo.png';
-    document.getElementsByTagName('head')[0].appendChild(link);
+  x.src = "g-sm64";
+  favicon.setAttribute("href", "g-sm64/logo.png");
 }
 function start4Frame() {
-  const frames = window.frames;
-  for (let i = 0; i < frames.length; i++) {
-    frames[i].location = "g-hextris";
-  };
-  var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
-    link.type = 'image/x-icon';
-    link.rel = 'shortcut icon';
-    link.href = 'g-hextris/favicon.ico';
-    document.getElementsByTagName('head')[0].appendChild(link);
+  x.src = "g-hextris";
+  favicon.setAttribute("href", "g-hextris/favicon.ico");
 }
 function rFunction() {
-  var x = document.getElementById("main");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  };
+  x.classList.remove("load");
+  x.focus();
   $("#main").on('load',function() {
-        document.title = document.getElementById("main").contentDocument.title;
+        document.title = x.contentDocument.title;
     });
-}
-function disableScroll() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
   document.body.style.overflow = 'hidden';
