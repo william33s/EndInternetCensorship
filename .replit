@@ -1,2 +1,2 @@
 language="nix"
-run = "./replit-run.sh"
+run = "bash replit-run.sh"
