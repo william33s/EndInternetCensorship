@@ -109,19 +109,10 @@ function Tetris(controller) {
 		    }
 		    gameEndTty.addLine('');
 		    gameEndTty.addLine('');
-
-			/*
-		    gameEndTty.addLine('Re-directing you to');
-		    gameEndTty.addLine('the score screen...');
-			*/
-			
 			gameEndTty.addLine('Your score was:');
 			gameEndTty.addLine(scoreObject.score.toString());
 		    gameEndTty.addLine('');
 		    gameEndTty.addLine('');
-
-		    //sendScoreRequest(scoreObject.score);
-
 			window.setTimeout(function() {
 				document.getElementById('gameEndContainer').setAttribute('class', 'gameEndOutputHidden');
 				controller.restart();
@@ -129,13 +120,10 @@ function Tetris(controller) {
 		}
 	    }
 	} else if (paused) {
-	    // see if the escape key was hit
 	    if (escapePressed && (!lastEscapeState)) {
-		// change the time offset
 		timeOffset += realTime - startPauseTime;
 		paused = false;
 	    }
-	    // see if any buttons were pressed
 	    if (mouseClick) {
 		if (continueButton.isClicked(mouseClick.x, mouseClick.y)) {
 		    // change the time offset
