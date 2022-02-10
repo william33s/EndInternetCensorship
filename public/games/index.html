@@ -141,7 +141,7 @@
   </a>
 </div>
 <div class="tn">
-  <a href="https://retro-bowl.endinternetcensorship.repl.co" target="_blank">
+  <a onclick="start10Frame(); rFunction()">
   <img src="img/rb.png" class="lazy" alt="app"><hr>
   <h1>Retro Bowl</h1>
   </a>
@@ -171,7 +171,7 @@
   </a>
 </div>
 <div class="tn">
-  <a href="https://astray.endinternetcensorship.repl.co" target="_blank">
+  <a onclick="start9Frame(); rFunction()">
   <img src="img/astray.png" class="lazy" alt="app"><hr>
   <h1>Astray</h1>
   </a>
@@ -201,7 +201,7 @@
   </a>
 </div>
 <div class="tn">
-  <a href="https://0hn0.endinternetcensorship.repl.co/" target="_blank">
+  <a onclick="g-0hn0">
   <img class="lazy" data-src="img/0hn0.png" alt="app"><hr>
   <h1>0h n0</h1>
   </a>
@@ -237,7 +237,7 @@
   </a>
 </div>
 <div class="tn">
-  <a href="https://spelunky.endinternetcensorship.repl.co" target="_blank">
+  <a onclick="start7Frame(); rFunction()">
   <img class="lazy" data-src="img/spelunky.webp" alt="miner-boi"><hr>
   <h1>Spelunky</h1>
   </a>
@@ -320,6 +320,22 @@ function start5Frame() {
 }
 function start6Frame() {
   x.src = "g-bbasic";
+}
+function start7Frame() {
+  x.src = "g-spelunky";
+  favicon.setAttribute("href", "g-spelunky/favicon.ico");
+}
+function start8Frame() {
+  x.src = "g-0hn0";
+  favicon.setAttribute("href", "g-0hn0/img/icon-1024-transparent.png");
+}
+function start9Frame(){
+  x.src = "g-astray";
+  favicon.setAttribute("href", "g-astray/icon.png");
+}
+function start10Frame() {
+  x.src = "g-retro-bowl";
+  favicon.setAttribute("href", "g-retro-bowl/img/icon.png");
 }
 function rFunction() {
   x.classList.add('back-fix');
