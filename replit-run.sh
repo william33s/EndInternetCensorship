@@ -21,7 +21,7 @@ rm -rf replit-nginx-temp
 mkdir replit-nginx-temp
 cp nginx.conf replit-nginx-temp/
 cd replit-nginx-temp
-../docker-sed.sh
+bash ../docker-sed.sh
 
 # replace with appropriate public dir path
 sed -i "s/\/opt\/womginx\/public/$ESCAPED_DIR\/public/g" nginx.conf
