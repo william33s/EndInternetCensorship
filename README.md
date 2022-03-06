@@ -1,4 +1,7 @@
 ﻿# EndInternetCensorship
+ 
+ A traditional proxy site that adds on to [Degeneracy](https://github.com/Degen-dev/Degeneracy)
+ 
 Check Out My Website Here On Replit: https://home.endinternetcensorship.repl.co/
 
 Does Your School Try To Censor Your Internet Access?<br>
