@@ -7,11 +7,19 @@ html {
 
 body {
     text-align: center;
-    background-color: #292a36;
+    background: linear-gradient(-45deg, 	#080a3f,   #01263f, #0e384b, #0b3243, #0c242b);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
     color: grey;
     font-weight: 500;
     font-family: 'Ubuntu';
     font-size: 20px;
+}
+
+@keyframes gradient {
+0% {background-position: 0% 50%;}
+50% {background-position: 100% 50%;}
+100% {background-position: 0% 50%;}
 }
 
 .mainHead {
