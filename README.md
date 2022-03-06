@@ -1,6 +1,6 @@
 ﻿# EndInternetCensorship
  
- A traditional proxy site that adds on to [Degeneracy](https://github.com/Degen-dev/Degeneracy)
+A new proxy site that builds on [Degeneracy](https://github.com/Degen-dev/Degeneracy)
  
 Check Out My Website Here On Replit: https://home.endinternetcensorship.repl.co/
 
