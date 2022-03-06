@@ -1,2 +1,2 @@
-language="nix"
-run = " bash replit-run.sh"
+language = "nodejs"
+run = "npm install && npm start"
