@@ -83,11 +83,8 @@ body {
     transform: translate(-50%, -50%);
 
 }
-
 .proSelect {margin-bottom: 5%;}
-
-#descFrame {width: 100%;height: 50px; border:5px black solid; border-radius:15px;padding:20px;}
-
+#descFrame {width:100%;height:50px;border:5px black solid;border-radius:15px;padding:20px;background-color:#292a36;}
 .homeButton {
     width: 150px;
     height: 50px;
