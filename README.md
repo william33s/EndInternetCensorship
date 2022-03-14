@@ -1,8 +1,9 @@
 # EndInternetCensorship
 
-A new proxy site that builds on [Degeneracy](https://github.com/Degen-dev/Degeneracy) *The old demo is not based on Degeneracy*
+A new proxy site that builds on [Degeneracy](https://github.com/Degen-dev/Degeneracy)
 
 Old Replit Demo: https://home.endinternetcensorship.repl.co/
+(*The old replit demo is not based on Degeneracy*)
 
 Does Your School Try To Censor Your Internet Access?<br>
 Well, Mine Does And I Decided To Do Something About It!<br>
