@@ -264,26 +264,6 @@ button:hover {
     margin-top: 55px;
 }
 
-footer {
-    position: fixed;
-    margin-top: 10px;
-    left: 0;
-    right: 0;
-    bottom: 10px;
-    font-family: 'Ubuntu';
-    font-size: 15px;
-    color: grey;
-}
-
-footer, footer a {
-    font-size: 15px;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
 .faqFoot {
     position: relative;
 }
