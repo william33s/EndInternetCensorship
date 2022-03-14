@@ -200,7 +200,7 @@
   </a>
 </div>
 <div class="tn">
-  <a onclick="start4Frame(); rFunction()">
+  <a href="gamelib/hextris">
   <img class="lazy" data-src="images/hextris.png" alt="hextris-logo"><hr>
   <h1>Hextris</h1>
   </a>
@@ -248,7 +248,7 @@
   </a>
 </div>
 <div class="tn">
-  <a onclick="start5Frame(); rFunction()">
+  <a href="/gamelib/tetris">
   <img class="lazy" data-src="images/tetris.webp" alt="tetris"><hr>
   <h1>Tetris</h1>
   </a>
@@ -267,50 +267,6 @@
 </div>
 </div>
 </div>
-<iframe style="width:100vw;height:100vh;max-width:none;position:absolute;top:0px;left:0px;z-index:5;" frameBorder="0" id="main" class="load" src="about:blank">
-</iframe>
 </body>
-
-<script>
-const favicon = document.getElementById("favicon");  
-var x = document.getElementById("main");
-$(function() {$('.lazy').Lazy();});
-function startFrame() {
-  x.src = "g-slope";
-}
-function start2Frame() {
-  x.src = "g-mjs";
-  favicon.setAttribute("href", "g-mjs/favicon.ico");
-}
-function start3Frame() {
-  x.src = "g-sm64";
-  favicon.setAttribute("href", "g-sm64/logo.png");
-}
-function start4Frame() {
-  x.src = "g-hextris";
-  favicon.setAttribute("href", "g-hextris/favicon.ico");
-}
-function start5Frame() {
-  x.src = "g-tetris";
-}
-function rFunction() {
-  x.classList.add('back-fix');
-  x.classList.remove("load");
-  x.focus();
-  $("#main").on('load',function() {
-        document.title = x.contentDocument.title;
-    });
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-  document.body.style.overflow = 'hidden';
-    scrollTop = 
-      window.pageYOffset || document.documentElement.scrollTop;
-    scrollLeft = 
-      window.pageXOffset || document.documentElement.scrollLeft,
-
-        window.onscroll = function() {
-            window.scrollTo(scrollLeft, scrollTop);
-        };
-}
-</script>
+<script>$(function() {$('.lazy').Lazy();});</script>
 </html>
