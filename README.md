@@ -1,6 +1,6 @@
 # EndInternetCensorship
 
-A new proxy site that builds on [Degeneracy](https://github.com/Degen-dev/Degeneracy)
+A new proxy site that builds on [Degeneracy](https://github.com/Degen-dev/Degeneracy) *The old demo is not based on Degeneracy*
 
 Old Replit Demo: https://home.endinternetcensorship.repl.co/
 
