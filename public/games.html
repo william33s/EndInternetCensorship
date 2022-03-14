@@ -8,43 +8,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="main.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
-    <link href="https://eic-files.endinternetcensorship.repl.co/main.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script>
-      function navFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-    </script>
     <style>
     *{text-decoration:none;}.tn{width: 250px;background-color: #04AA6D;border-radius: 25px;border: 5px solid black;box-shadow: 5px 5px 50px grey;transition: all .2s ease-in-out;margin-left: 20px;margin-bottom: 30px;float: left;}.tn:hover{transform: scale(1.1);}.t,.lazy{padding-top: 15px;}.center{margin: 0 auto;width: 1150px;}.load{pointer-events:none;}.back-fix{background:black;}
   </style>
 </head>
 <body>
-  <div class="topnav" id="myTopnav">
-    <a href="https://home.endinternetcensorship.repl.co">Home</a>
-    <a href="https://unblock.endinternetcensorship.repl.co/">Proxy</a>
-    <a href="/" class="active">Games</a>
-    <div class="dropdown">
-      <button class="dropbtn">Retro
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="https://gba.endinternetcensorship.repl.co">GBA</a>
-        <a href="https://n64.endinternetcensorship.repl.co" >N64</a>
-        <a href="https://ds-games.endinternetcensorship.repl.co" id="fL">DS</a>
-      </div>
-    </div>
-    <a href="https://about.endinternetcensorship.repl.co" id="last">About</a>
-    <a href="javascript:void(0);" class="icon" onclick="navFunction()">&#9776;</a>
-  </div>
+<div class="navbar">
+    <i class="fa fa-home" onclick="location.href='/choice'"></i>
+    <a href="/settings">Settings</a>
+</div>
   <header style="padding-left: 10px">
     <img src="img/logo.png" alt="logo" style="float: left; width: 50px; padding-right: 5px;">
     <h1>EndInternetCensorship</h1>
