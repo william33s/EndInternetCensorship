@@ -83,7 +83,7 @@ function loadPicture() {
     if (window.localStorage.hasOwnProperty("icon")) {
         pageicon.setAttribute("src", localStorage.getItem("icon"));
     } else {
-        pageicon.setAttribute("src", "/images/Degener.png");
+        pageicon.setAttribute("src", "/images/icon.png");
     };
 };
 
