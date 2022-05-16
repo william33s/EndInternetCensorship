@@ -1,3 +1,5 @@
+⚠️ _I've completely ended support for EIC, I've already phased out of supporting it for a while now. It has not received any updates in months and the github port will be left in an unfinished state. Thank you for using EIC!_
+
 # EndInternetCensorship
 
 A new proxy site that builds on [Degeneracy](https://github.com/Degen-dev/Degeneracy)
